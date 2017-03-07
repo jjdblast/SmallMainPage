@@ -1,0 +1,289 @@
+/*公共样式*/
+
+.btn:focus {
+    outline: 0;
+}
+
+.btn-terrible {
+    color: #ffffff;
+    background-color: #7e0023;
+    border-color: transparent;
+}
+
+.btn-terrible:hover, .btn-terrible:active:hover {
+    color: #ffffff;
+    background-color: #630000;
+    border-color: transparent;
+}
+
+.btn-terrible .badge {
+    color: #7e0023;
+    background-color: #ffffff;
+}
+
+.text-terrible {
+    color: #7e0023;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    background-color: transparent !important;
+    background-image: none !important;
+    color: #666;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.panel-heading a {
+    opacity: 0.8;
+}
+
+.panel-heading:hover a {
+    opacity: 1;
+}
+
+.alert-dismissable,
+.alert-dismissible {
+    padding-right: 15px;
+}
+
+.alert-dismissable .close,
+.alert-dismissible .close {
+    right: 0;
+}
+
+.alert.top {
+    position: fixed;
+    top: 30px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 50%;
+    z-index: 1050;
+}
+
+.funicon {
+    display: inline-block;
+    font-size: 34px;
+    font-weight: 300;
+    line-height: 24px;
+    opacity: 0.6;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.funicon:hover {
+    opacity: 1;
+}
+
+.list-group-item {
+    padding: 10px 15px;
+}
+
+/*带刷新的panel*/
+
+.refresh-header {
+    padding: 5px 15px;
+    font-size: 15px;
+}
+
+.refresh-header .btn-refresh {
+    margin-top: 6px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    transition: transform .6s;
+}
+
+.refresh-header .btn-refresh:hover {
+    transform: rotate(360deg);
+}
+
+.refresh-header .btn-refresh.ing {
+    animation: rotate 1s infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/*登录区域*/
+
+.tiny-wrap {
+    padding: 8px;
+    border: 1px #ddd solid;
+    border-radius: 4px;
+    box-shadow: none;
+}
+
+/*网址配置*/
+
+.siteConfig {
+    display: block;
+}
+
+.submitSiteWrap {
+    margin: 16px 0 -10px 0;
+}
+
+.addSiteLineTwo {
+    margin-top: 6px;
+}
+
+.addSiteLineTwo .checkbox {
+    margin-top: 8px;
+}
+
+.addSiteLineTwo select {
+    width: 100%;
+    padding-bottom: 3px;
+    padding-left: 1px;
+    font-size: 13px;
+}
+
+.submitSiteBtn {
+    float: right;
+    margin-top: 8px;
+}
+
+/*模块配置*/
+
+.mokuaiConfig label {
+    margin-right: 10px;
+}
+
+.mokuaiConfig input[type="checkbox"]:after,
+.mokuaiConfig .checkbox input[type="checkbox"]:after,
+.mokuaiConfig .checkbox-inline input[type="checkbox"]:after {
+    border: 1px solid #fff;
+}
+
+.siteWrap {
+    margin: 16px -12px 0 0;
+}
+
+.siteWrap span {
+    margin: 0 8px 8px 0;
+}
+
+.siteBtn {
+    margin: 0 8px 8px 0;
+    transition: all .5s;
+}
+
+.site-icon {
+    display: inline-block;
+    max-width: 16px;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: text-bottom;
+}
+
+.addSiteBtn {
+    margin: 0 -16px -3px 0 !important;
+    color: #2196f3;
+    border-radius: 0;
+}
+
+.addon-sel {
+    margin: 0 0 10px 0;
+}
+
+.col-md-3 .addon .addonimg {
+    max-height: 180px;
+}
+
+.col-md-6 .addon .addonimg {
+    height: 180px;
+    cursor: -webkit-zoom-in;
+}
+
+.addon a {
+    text-decoration: none;
+}
+
+.addon .list-group-item {
+    transition: background-color .3s;
+}
+
+.addon .list-group-item:hover {
+    background-color: #f5f5f5;
+}
+
+.addon .addonimg.imgauto {
+    height: auto;
+    cursor: -webkit-zoom-out;
+}
+
+.addon .addon-video-wrap {
+    height: auto;
+}
+
+.addon .addon-video {
+    max-height: 200px;
+    cursor: -webkit-zoom-in;
+}
+
+.addon video.embed-responsive-item {
+    cursor: -webkit-zoom-out;
+}
+
+/*about*/
+
+.about .panel-heading {
+    padding: 2px 15px;
+}
+
+.about .panel-title {
+    margin-top: 2px;
+    font-size: 13px;
+}
+
+.about-page {
+    margin: 0;
+}
+
+.about .btn-default.disabled:hover,
+.about .btn-default.disabled:focus,
+.about .btn-default.disabled.focus {
+    background-color: transparent;
+}
+
+/*过渡动画*/
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity .5s
+}
+
+.fade-enter,
+.fade-leave-active {
+    opacity: 0
+}
+
+/*网址动画*/
+
+.site-list-move {
+    transition: transform .5s;
+}
+
+/*登录浮层动画*/
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity .5s
+}
+
+.fade-enter,
+.fade-leave {
+    opacity: 0
+}
